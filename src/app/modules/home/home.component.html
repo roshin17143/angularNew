@@ -1,0 +1,38 @@
+<!-- <div class="tabs-wrapper">
+  <div class="tabs" routerLink="/home/add">Add</div>
+  <div class="tabs" routerLink="/home/show">Show</div>
+  <div class="tabs" routerLink="/home/details">Details</div>
+</div> -->
+<p>
+  <mat-toolbar color="primary">
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+    <span>Story App</span>
+    <span class="flex-spacer"></span>
+    <button mat-button routerLink="/home/show" class="example-icon"
+      aria-label="Example icon-button with share icon">
+      View Stories
+    </button>
+    <button mat-button routerLink="/home/add" class="example-icon"
+      aria-label="Example icon-button with share icon" *ngIf="isAdmin">
+      Add a new Story
+    </button>
+
+    <button mat-button routerLink="/home/details" class="example-icon favorite-icon"
+      aria-label="Example icon-button with heart icon">
+      <!-- <mat-icon>favorite</mat-icon> -->
+      Story Details
+    </button>
+
+    <button mat-raised-button class="example-icon favorite-icon" color="warn"
+      aria-label="Example icon-button with heart icon" (click)="onLogout()">
+      <!-- <mat-icon>favorite</mat-icon> -->
+      Logout
+    </button>
+  </mat-toolbar>
+</p>
+<div class="home-content">
+  <router-outlet></router-outlet>
+</div>
+

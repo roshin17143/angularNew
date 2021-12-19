@@ -1,0 +1,15 @@
+.tabs-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs {
+  padding: 1rem;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+
+.home-content {
+  padding: 1rem;
+}

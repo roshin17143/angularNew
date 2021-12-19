@@ -1,0 +1,14 @@
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+mat-card {
+  margin: 1rem;
+}
+
+mat-card-footer {
+  text-align: end;
+  padding-right: 0.75rem;
+}

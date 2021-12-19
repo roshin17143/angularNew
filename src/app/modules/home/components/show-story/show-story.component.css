@@ -1,0 +1,16 @@
+::ng-deep .mat-list-item-content {
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+}
+
+.story-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.interactions-panel {
+  display: flex;
+}
